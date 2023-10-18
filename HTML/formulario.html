@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario aqui</h1>
+    <form action="arquivo.php" method="get">
+        <!--geralmente vai pra um arquivo php de que recebe as informações do formulario , com o metodo-->
+        <!--ao criar um formulario, cria com uma ação(pra qual caminho vai e com um método que "get", "post", )-->
+          <label for="">Nome: </label><br>
+          <input type="text" placeholder="Digite aqui o seu nome: " required=""><br>
+          <label for="">Sobrenome</label><br>
+          <input type="text" placeholder="Digite aqui o seu sobrenome: " required><br>
+          <label for="">Senha: </label><br>
+          <input type="password" placeholder="senha..." required><br>
+          <label for="">E-mail</label><br>
+          <input type="email" placeholder="Digite seu Email" required><br>
+          <h2>Animal de estimação</h2>
+          <input type="radio" name="animal" value="cachorro" id="dog">
+          <label for="dog">cachorro</label><br>
+          <!--input do tipo radio, bolinha clicavel com opções-->
+          <!--define name, o valor que será cachorro e um id para construir a label-->
+          <!--recurso "for" ,"id"-->
+          <input type="submit" value="Enviar"><BR></BR>
+          <!--Submit para enviar o formulário-->
+          <!--pode-se usar required para obrigar o usuario a colocar algo necessáriamente nesses campos-->
+          <input type="checkbox" name="item1" value="TV" id="it1">
+          <label for="it1">TV</label><br><br>
+          <!--mesma lógica do radio , so que dessa vez sendo caixinhas de check-->
+          <h2>Escolha uma Cor:</h2>
+          <!--tipo "select" também usado em formulários-->
+          <select name="cores">
+            <!--no formulario ele ia pegar um campo com o nome cores-->
+            <option value="" selected disabled>Selecione uma cor:</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="verde">Verde</option>
+            <!--toogle down de escolhas no select-->
+            <!--o que é enviado ao formulario é o que se encontra dentro do value-->
+          </select><br><br><br>
+
+          <h2>Digite sua mensagem: </h2><br><br>
+          <textarea name="" id="" cols="50" rows="15"></textarea><br><br>
+          <!--abre uma área pro usuário escrever um texto-->
+          <!--rows número de linhas que ocupa-->
+          <!--cols quantidade de colunas-->
+         <button>Clique Aqui</button>
+
+    </form>
+    <a href="Index.html">Pagina Inicial</a>
+    
+</body>
+</html>
